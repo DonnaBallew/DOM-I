@@ -80,3 +80,9 @@ let imgHeader = document.querySelector("#cta-img");
 
 imgHeader.setAttribute("src", siteContent.cta["img-src"]);
 console.log(getStartedBtn);
+
+//Update middle-img-src
+let mainConentImg = document.querySelector("#middle-img");
+// let mainConentImg = document.getElementById("middle-img");
+
+mainConentImg.src = siteContent["main-content"]["middle-img-src"];
