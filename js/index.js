@@ -79,10 +79,29 @@ getStartedBtn.textContent = siteContent.cta.button;
 let imgHeader = document.querySelector("#cta-img");
 
 imgHeader.setAttribute("src", siteContent.cta["img-src"]);
-console.log(getStartedBtn);
+console.log("Get Started Button", getStartedBtn);
 
 //Update middle-img-src
 let mainConentImg = document.querySelector("#middle-img");
 // let mainConentImg = document.getElementById("middle-img");
 
 mainConentImg.src = siteContent["main-content"]["middle-img-src"];
+
+//Top Content - Features h4
+const features = document.querySelectorAll(".top-content .text-content h4")[0];
+features.textContent = siteContent["main-content"]["features-h4"];
+
+//Top Content - Features paragraph
+const featuresPar = document.querySelectorAll(
+  ".top-content .text-content p"
+)[0];
+featuresPar.textContent = siteContent["main-content"]["features-content"];
+
+//Top Content - About h4
+
+const about = document.querySelectorAll(".top-content .text-content h4")[1];
+about.textContent = siteContent["main-content"]["about-h4"];
+
+//Top Content - About paragraph
+const aboutPar = document.querySelectorAll(".top-content .text-content p")[1];
+aboutPar.textContent = siteContent["main-content"]["about-content"];
