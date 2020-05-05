@@ -105,3 +105,37 @@ about.textContent = siteContent["main-content"]["about-h4"];
 //Top Content - About paragraph
 const aboutPar = document.querySelectorAll(".top-content .text-content p")[1];
 aboutPar.textContent = siteContent["main-content"]["about-content"];
+
+//Bottom content - Services h4
+const services = document.querySelectorAll(
+  ".bottom-content .text-content h4"
+)[0];
+services.textContent = siteContent["main-content"]["services-h4"];
+
+//Bottom content - Services paragraph
+const servicesPar = document.querySelectorAll(
+  ".bottom-content .text-content p"
+)[0];
+servicesPar.textContent = siteContent["main-content"]["services-content"];
+
+//Bottom content - Product h4
+const product = document.querySelectorAll(
+  ".bottom-content .text-content h4"
+)[1];
+product.textContent = siteContent["main-content"]["product-h4"];
+
+//Bottom content - Product paragraph
+const productPar = document.querySelectorAll(
+  ".bottom-content .text-content p"
+)[1];
+productPar.textContent = siteContent["main-content"]["product-content"];
+
+//Bottom content - Vision h4
+const vision = document.querySelectorAll(".bottom-content .text-content h4")[2];
+vision.textContent = siteContent["main-content"]["vision-h4"];
+
+//Bottom content - Vision paragraph
+const visionPar = document.querySelectorAll(
+  ".bottom-content .text-content p"
+)[2];
+visionPar.textContent = siteContent["main-content"]["vision-content"];
