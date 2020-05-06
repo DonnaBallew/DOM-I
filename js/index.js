@@ -131,3 +131,15 @@ preButton.href = "#";
 preButton.textContent = "Prepend Button";
 preButton.style.color = "green";
 nav.prepend(preButton);
+
+// Stretch
+
+getStartedBtn.addEventListener("click", () => {
+  getStartedBtn.style.background = "#00d733";
+  getStartedBtn.style.transform = "translateY(8rem) rotateZ(360deg)";
+  getStartedBtn.style.transition = "all 0.8s ease";
+});
+
+copyright.style.backgroundColor = "#0669c7";
+copyright.style.padding = "1rem";
+copyright.style.color = "white";
