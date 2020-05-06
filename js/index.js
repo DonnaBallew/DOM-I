@@ -119,3 +119,15 @@ navBarItems.forEach((element) => {
 });
 
 // Task 3:  append and prepend
+const appButton = document.createElement("a");
+appButton.href = "#";
+appButton.textContent = "Append Button";
+appButton.style.color = "green";
+const nav = document.querySelector("nav");
+nav.appendChild(appButton);
+
+const preButton = document.createElement("a");
+preButton.href = "#";
+preButton.textContent = "Prepend Button";
+preButton.style.color = "green";
+nav.prepend(preButton);
