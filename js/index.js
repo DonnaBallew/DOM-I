@@ -134,6 +134,8 @@ nav.prepend(preButton);
 
 // Stretch
 
+getStartedBtn.style.borderRadius = "10px";
+
 getStartedBtn.addEventListener("click", () => {
   getStartedBtn.style.background = "#00d733";
   getStartedBtn.style.transform = "translateY(8rem) rotateZ(360deg)";
