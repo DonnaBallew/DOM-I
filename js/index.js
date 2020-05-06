@@ -77,9 +77,12 @@ imgHeader.setAttribute("src", siteContent.cta["img-src"]);
 // console.log("Get Started Button", getStartedBtn);
 
 //Main-Content Section
-const mainConentImg = document.querySelector("#middle-img");
-// let mainConentImg = document.getElementById("middle-img");
-mainConentImg.src = siteContent["main-content"]["middle-img-src"];
+const mainContentImg = document.querySelector("#middle-img");
+// let mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute(
+  "src",
+  siteContent["main-content"]["middle-img-src"]
+);
 
 const sectionHeader = document.querySelectorAll(".main-content h4");
 sectionHeader[0].textContent = siteContent["main-content"]["features-h4"];
@@ -109,3 +112,10 @@ contactEmail.textContent = siteContent.contact.email;
 //Footer Section
 const copyright = document.querySelector("footer p");
 copyright.textContent = siteContent.footer.copyright;
+
+// Task3: Green text on navbar
+navBarItems.forEach((element) => {
+  element.style.color = "green";
+});
+
+// Task 3:  append and prepend
